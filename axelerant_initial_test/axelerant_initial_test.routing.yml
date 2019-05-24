@@ -1,0 +1,6 @@
+axelerant_initial_test.page_json:
+  path: '/page_json/{node}'
+  defaults:
+    _controller: '\Drupal\axelerant_initial_test\Controller\customAxelerantController::axelerant_page_json_output'
+  requirements:
+    _permission: 'administer site configuration'

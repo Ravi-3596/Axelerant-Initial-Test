@@ -1,0 +1,5 @@
+name: Axelerant Initial Questionnaire
+description: Converts node content into Json format for your Drupal site.
+package: Axelerant
+type: module
+core: 8.x

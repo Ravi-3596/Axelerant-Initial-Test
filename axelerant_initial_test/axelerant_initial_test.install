@@ -1,0 +1,23 @@
+<?php
+/**
+ * @file
+ * Install and uninstall functions for the axelerant_initial_test module.
+ * This file contains the functions required to perform install and uninstall operations.
+ */ 
+ 
+/**
+ * Implements hook_install().
+ */
+function axelerant_initial_test_install() {
+  // Define global variable to set - axelerant_site_api_key.
+  \Drupal::state()->set('siteapikey','No API Key yet');
+}
+
+/**
+ * Implements hook_uninstall().
+ * It's good to clean up value after module uninstall.
+ */
+function axelerant_initial_test_uninstall() {
+  // Delete global variable - axelerant_site_api_key.
+  \Drupal::state()->delete('siteapikey');
+}
